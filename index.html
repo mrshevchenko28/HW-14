@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Layout</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="border">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFirstTryChangedContent" aria-controls="navbarFirstTryChangedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarFirstTryChangedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarFirstTryChangedDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarFirstTryChangedDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+      
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 order-1 order-md-0 border m-0 p-0 bg-success">
+          <div id="carouselSlidingFirstTryChangedControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://picsum.photos/id/237/200/300" class="d-block w-100" alt="PictureOne">
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/id/238/200/300" class="d-block w-100" alt="PictureTwo">
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/id/239/200/300" class="d-block w-100" alt="PictureThree">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlidingFirstTryChangedControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselSlidingFirstTryChangedControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-12 order-0 border m-0 p-0 bg-warning">
+          <div class="accordion accordion-flush" id="accordionFlushFirstTryChanged">
+            <div class="accordion-item bg-light">
+              <h2 class="accordion-header" id="HeadingFirstRow">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#FlushCollapseFirstTryChanged" aria-expanded="false" aria-controls="FlushCollapseFirstTryChanged">
+                  Small Description #1
+                </button>
+              </h2>
+              <div id="FlushCollapseFirstTryChanged" class="accordion-collapse collapse" role="region" aria-labelledby="HeadingFirstRow" data-bs-parent="#accordionFlushFirstTryChanged">
+                <div class="accordion-body">I stuck at this home-work-14 for a long period of time because i don't get how <code>bootstrap</code> library is working. A large amount of code confused me. Now I think I understand <code>bootstrap</code> better</div>
+              </div>
+            </div>
+            <div class="accordion-item bg-light">
+              <h2 class="accordion-header" id="HeadingSecondRow">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#FlushCollapseSecondTryChanged" aria-expanded="false" aria-controls="FlushCollapseSecondTryChanged">
+                  Small Description #2
+                </button>
+              </h2>
+              <div id="FlushCollapseSecondTryChanged" class="accordion-collapse collapse" role="region" aria-labelledby="HeadingSecondRow" data-bs-parent="#accordionFlushFirstTryChanged">
+                <div class="accordion-body">The hardest part of my home-work-14 were <code>media queries</code></div>
+              </div>
+            </div>
+            <div class="accordion-item bg-light">
+              <h2 class="accordion-header" id="HeadingThirdRow">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#FlushCollapseThirdTryChanged" aria-expanded="false" aria-controls="FlushCollapseThirdTryChanged">
+                  Small Description #3
+                </button>
+              </h2>
+              <div id="FlushCollapseThirdTryChanged" class="accordion-collapse collapse" role="region" aria-labelledby="HeadingThirdRow" data-bs-parent="#accordionFlushFirstTryChanged">
+                <div class="accordion-body">Small amount of text just to demostrate what i learned from <code>bootstrap</code></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 order-1 order-md-0 bg-info">
+          <form>
+            <div class="mb-3">
+              <label for="InputFirstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="InputFirstName">
+            </div>
+            <div class="mb-3">
+              <label for="InputLastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="InputLastName">
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="male" checked>
+              <label class="form-check-label" for="male">
+                Male
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="radio" name="gender" id="female">
+              <label class="form-check-label" for="female">
+                Female
+              </label>
+            </div>
+            <div class="mb-3">
+              <label for="Input-Email-FirstTryChanged" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="Input-Email-FirstTryChanged" aria-describedby="EmailField">
+              <div id="EmailField" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="Input-Password-FirstTryChanged" class="form-label">Password</label>
+              <input type="password" class="form-control" id="Input-Password-FirstTryChanged">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="CheckUp">
+              <label class="form-check-label" for="CheckUp">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary mb-1">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="card border-2">
+      <div class="card-header bg-secondary">
+        Quote
+      </div>
+      <div class="card-body bg-light">
+        <blockquote class="blockquote mb-0">
+          <p>Put your heart, mind, and soul into even your smallest acts. This is the secret of success.</p>
+          <div class="blockquote-footer">Swami Sivananda <cite title="Bliss Divine">Bliss Divine</cite></div>
+        </blockquote>
+      </div>
+    </footer>
+
+</body>
+</html>
